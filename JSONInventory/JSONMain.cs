@@ -16,15 +16,31 @@ namespace JSONInventory
         public void ReadJsonFile(string filePath)
         {                      
            var json = File.ReadAllText(filePath);
-           List<model> data = JsonConvert.DeserializeObject<List<model>>(json);
-           Console.WriteLine("name: weight, price, total value");
-           foreach (var content in data)
-           {     
-              double value = content.price * content.weight;
-              Console.WriteLine(content.name + " : " + content.weight + " , " + content .price + " , " + value);
+            model data = JsonConvert.DeserializeObject<model>(json);
+            List<model> amazon = data.Amazon;
+            List<model> flipkart = data.Flipkart;
+            List<model> dmart = data.DMart;
+            Console.WriteLine("Amazon: ");
+            foreach (var content in amazon)
+            {
+                double value = content.price * content.weight;
+                Console.WriteLine(content.name + "   " + content.price + "   " + content.weight + "   " + value);
+            }
 
-           }
-            
+            Console.WriteLine("Flipkart:");
+            foreach (var content in flipkart)
+            {
+                double value = content.price * content.weight;
+                Console.WriteLine(content.name + "   " + content.price + "   " + content.weight + "   " + value);
+            }
+
+            Console.WriteLine("DMart:");
+            foreach (var content in dmart)
+            {
+                double value = content.price * content.weight;
+                Console.WriteLine(content.name + "   " + content.price + "   " + content.weight + "   " + value);
+            }
+
         }
     }
 }
