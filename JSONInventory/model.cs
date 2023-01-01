@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace JSONInventory
 {
-    public class model
+    public class StockDetails
     {
-        public string name { get; set; }
-        public int weight { get; set; }
-        public int price { get; set; }
+        public string StockName { get; set; }
+        public double StockPrice { get; set; }
+        public int NoOfShares { get; set; }
 
-        public List<model> Amazon { get; set; }
-        public List<model> Flipkart { get; set; }
-        public List<model> DMart { get; set; }
     }
 }

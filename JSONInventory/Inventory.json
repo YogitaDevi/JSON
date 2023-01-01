@@ -1,53 +1,27 @@
-{
-  "Amazon": [
-    {
-      "name": "Rice",
-      "weight": "5",
-      "price": "100"
-    },
-    {
-      "name": "Pulses",
-      "weight": "10",
-      "price": "50"
-    },
-    {
-      "name": "Wheats",
-      "weight": "20",
-      "price": "100"
-    }
-  ],
-  "Flipkart": [
-    {
-      "name": "Rice",
-      "weight": "10",
-      "price": "80"
-    },
-    {
-      "name": "Pulses",
-      "weight": "15",
-      "price": "90"
-    },
-    {
-      "name": "Wheats",
-      "weight": "12",
-      "price": "70"
-    }
-  ],
-  "DMart": [
-    {
-      "name": "Rice",
-      "weight": "15",
-      "price": "90"
-    },
-    {
-      "name": "Pulses",
-      "weight": "10",
-      "price": "50"
-    },
-    {
-      "name": "Wheats",
-      "weight": "30",
-      "price": "70"
-    }
-  ]
-}
+[
+  {
+    "StockName": "Amazon  ",
+    "StockPrice": 765.0,
+    "NoOfShares": 378
+  },
+  {
+    "StockName": "Flipkart",
+    "StockPrice": 754.0,
+    "NoOfShares": 200
+  },
+  {
+    "StockName": "Myntra  ",
+    "StockPrice": 524.0,
+    "NoOfShares": 300
+  },
+  {
+    "StockName": "TCS      ",
+    "StockPrice": 346.0,
+    "NoOfShares": 400
+  },
+  {
+    "StockName": "TATA     ",
+    "StockPrice": 866.0,
+    "NoOfShares": 100
+  }
+]
